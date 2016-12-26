@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.androidlongs.book.common.model.user.UserModel"
+		dynamic-insert="true" dynamic-update="false" table="t_book_user">
+		<!-- 主键 -->
+		<id name="uid">
+			<generator class="native"></generator>
+		</id>
+
+		<property name="uname" type="string" length="50"></property>
+		<property name="udesc" type="string" length="300"></property>
+		<property name="usex" type="string" length="10"></property>
+		<property name="uage" type="string" length="10"></property>
+		<property name="upassword" type="string" length="50"></property>
+
+		<set name="uBookSet" table="t_re_book_and_user">
+			<key column="user_id"></key>
+			<many-to-many class="com.androidlongs.book.common.model.user.UserModel"
+				column="uid"></many-to-many>
+		</set>
+	</class>
+
+
+</hibernate-mapping>

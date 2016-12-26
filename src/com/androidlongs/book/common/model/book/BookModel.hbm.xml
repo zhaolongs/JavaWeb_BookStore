@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.androidlongs.book.common.model.book.BookModel"
+		dynamic-insert="true" dynamic-update="false" table="t_person_2">
+		<!-- 主键 -->
+		<id name="bid">
+			<generator class="native"></generator>
+		</id>
+
+		<property name="bname">
+		</property>
+		<property name="bauthor"></property>
+		<property name="bdesc"></property>
+		<set name="bUserSet" table="t_re_book_and_user">
+			<key column="book_id"></key>
+			<many-to-many class="com.androidlongs.book.common.model.book.BookModel"
+				column="bid"></many-to-many>
+		</set>
+		
+		<set name="bBookClassSet" table="t_re_bclass_and_book">
+		    <key column="book_id"></key>
+		    <many-to-many class="com.androidlongs.book.common.model.selfs.BookClassModel"
+				column="bcid"></many-to-many>
+		</set>
+	</class>
+
+
+</hibernate-mapping>

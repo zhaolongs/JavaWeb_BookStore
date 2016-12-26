@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- 1 基本4项 -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/book?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="hibernate.connection.username">monty</property>
+		<property name="hibernate.connection.password">some_pass</property>
+		<!-- 2 方言 -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<!-- 3 开发时，优化设置 -->
+		<!-- 3.1 显示生产sql语句 -->
+		<property name="hibernate.show_sql">true</property>
+		<!-- 3.2 格式化方式显示sql -->
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+
+		<!-- 5 取消bean校验 -->
+		<property name="javax.persistence.validation.mode">none</property>
+
+		<!-- 6 将session绑定当本地线程中 * hibernate session 管理 ： 只将使用。 * 当在cfg.xml 配置 thread，SessionFactory提供 
+			getCurrentSession() 将可以使用。 * hibernate底层使用 ThreadLocal 线程局部变量，可以在一个线程中共享数据。 
+			*** get() ##map.get(Thread) *** set(value) ##map.put(Thread,value) *** remove() 
+			##map.remove(Thread) -->
+		<property name="hibernate.current_session_context_class">thread</property>
+
+		<!-- 整合c3p0 -->
+		<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+
+		<!-- 映射文件 com.itheima -->
+		<!-- <mapping resource="com/androidlongs/book/common/model/BookClassModel.hbm.xml" 
+			/> -->
+		<!-- 书籍 -->
+		<mapping resource="com/androidlongs/book/common/model/book/BookModel.hbm.xml" />
+		<!--书籍分类 -->
+		<mapping resource="com/androidlongs/book/common/model/selfs/BookClassModel.hbm.xml" />
+		<!--用户列表  -->
+		<mapping resource="com/androidlongs/book/common/model/user/UserModel.hbm.xml" />
+		
+
+	</session-factory>
+
+</hibernate-configuration>
