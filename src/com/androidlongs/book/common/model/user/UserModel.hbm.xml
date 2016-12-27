@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 	<class name="com.androidlongs.book.common.model.user.UserModel"
-		dynamic-insert="true" dynamic-update="false" table="t_book_user">
+		dynamic-insert="true" dynamic-update="false" table="t_book_user" >
 		<!-- 主键 -->
 		<id name="uid">
 			<generator class="native"></generator>
@@ -16,7 +16,8 @@
 		<property name="uage" type="string" length="10"></property>
 		<property name="upassword" type="string" length="50"></property>
 
-		<set name="uBookSet" table="t_re_book_and_user">
+		<property name="userUUID" type="string" length="51"></property>
+		<set name="uBookSet" table="t_re_book_and_user"  inverse="true" lazy="false" >
 			<key column="user_id"></key>
 			<many-to-many class="com.androidlongs.book.common.model.user.UserModel"
 				column="uid"></many-to-many>

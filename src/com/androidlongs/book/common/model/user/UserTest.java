@@ -16,9 +16,9 @@ public class UserTest {
 		Transaction beginTransaction = session.beginTransaction();
 		
 		UserModel model = new UserModel();
-		model.setUname("小明");
+		model.setUname("小明--sss");
 		
-		session.save(model);
+		session.saveOrUpdate(model);
 		beginTransaction.commit();
 		session.close();
 	}

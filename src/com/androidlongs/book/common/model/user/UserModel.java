@@ -1,14 +1,24 @@
 package com.androidlongs.book.common.model.user;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.androidlongs.book.base.BaseModel;
 import com.androidlongs.book.common.model.book.BookModel;
 import com.sun.media.sound.ModelAbstractChannelMixer;
 
-public class UserModel {
+public class UserModel extends BaseModel implements Serializable{
 
 	private Integer uid;
+	private String userUUID;
+	public String getUserUUID() {
+		return userUUID;
+	}
+
+	public void setUserUUID(String userUUID) {
+		this.userUUID = userUUID;
+	}
 	private String uname;
 	private String uage;
 	private String udesc;
