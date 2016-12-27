@@ -1,5 +1,7 @@
 package com.androidlongs.book.base;
 
-public class BaseModel {
+import java.io.Serializable;
+
+public class BaseModel implements Serializable{
 
 }

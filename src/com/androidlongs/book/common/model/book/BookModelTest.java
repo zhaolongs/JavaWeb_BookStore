@@ -1,4 +1,4 @@
-package com.androidlongs.book.common.model;
+package com.androidlongs.book.common.model.book;
 
 import static org.junit.Assert.*;
 
@@ -12,7 +12,6 @@ import org.hibernate.cfg.Configuration;
 import org.junit.Test;
 
 
-import com.androidlongs.book.common.model.book.BookModel;
 import com.androidlongs.book.utils.HBUtils;
 
 public class BookModelTest {
