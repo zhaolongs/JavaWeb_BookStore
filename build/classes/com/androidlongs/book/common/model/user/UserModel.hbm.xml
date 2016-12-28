@@ -22,6 +22,19 @@
 			<many-to-many class="com.androidlongs.book.common.model.user.UserModel"
 				column="uid"></many-to-many>
 		</set>
+		
+		<!-- 一对多： 一个客户 拥有 【多个订单】 
+			* 确定容器
+				Set 	<set>
+				List	<list>
+				Map		<map>
+				xxx[]	<array>
+			* <key> 确定从表中外键名称
+		-->
+		<!-- <set name="uFroumSet" inverse="true">
+			<key column="froum_user_id"></key>
+			<one-to-many class="com.androidlongs.book.common.model.friend.FroumModel"/>
+		</set> -->
 	</class>
 
 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.androidlongs.book.common.model.friend.FroumModel"
+		dynamic-insert="true" dynamic-update="false" table="t_book_froum" >
+		<!-- 主键 -->
+		<id name="fuid">
+			<generator class="native"></generator>
+		</id>
+
+		<property name="fuuid" type="string" length="50"></property>
+		<property name="userUuid" type="string" length="100"></property>
+		<property name="fDesc" type="string" length="300"></property>
+		<property name="uFromTime" type="string" length="50"></property>
+		
+		<!-- 多对一： 多个订单（当前订单） 属于【 一个客户】 
+			* hbm 每一个映射文件都可以完整的描述对象之间关系。
+			* column 确定从表外键的
+		-->
+	<!-- 	<many-to-one name="userModel" class="com.androidlongs.book.common.model.user.UserModel" 
+		    column="froum_uuid"></many-to-one>
+		 -->
+	</class>
+
+
+</hibernate-mapping>

@@ -14,6 +14,8 @@ public interface HomeService {
 	UserModel regist(UserModel userModel);
 	//获取书籍列表
 	List<BookModel> getBookList();
+	//获取书籍信息
+	BookModel getBookModelFromName(String name);
 	//获取书籍分类
 	List<BookClassModel> getBookClassList();
 	

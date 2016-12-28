@@ -6,19 +6,14 @@ import java.util.Set;
 
 import com.androidlongs.book.base.BaseModel;
 import com.androidlongs.book.common.model.book.BookModel;
+import com.androidlongs.book.common.model.friend.FroumModel;
 import com.sun.media.sound.ModelAbstractChannelMixer;
 
 public class UserModel extends BaseModel implements Serializable{
 
 	private Integer uid;
 	private String userUUID;
-	public String getUserUUID() {
-		return userUUID;
-	}
 
-	public void setUserUUID(String userUUID) {
-		this.userUUID = userUUID;
-	}
 	private String uname;
 	private String uage;
 	private String udesc;
@@ -26,10 +21,18 @@ public class UserModel extends BaseModel implements Serializable{
 	private String upassword;
 	//我的书架
 	private Set<BookModel> uBookSet = new HashSet<>();
+	
+	
 	public void addBookModel(BookModel model) {
 		uBookSet.add(model);
 	}
-	
+	public String getUserUUID() {
+		return userUUID;
+	}
+
+	public void setUserUUID(String userUUID) {
+		this.userUUID = userUUID;
+	}
 	public Set<BookModel> getuBookSet() {
 		return uBookSet;
 	}

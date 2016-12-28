@@ -40,7 +40,8 @@
 		<mapping resource="com/androidlongs/book/common/model/selfs/BookClassModel.hbm.xml" />
 		<!--用户列表  -->
 		<mapping resource="com/androidlongs/book/common/model/user/UserModel.hbm.xml" />
-		
+		<!--论坛信息  -->
+		<mapping resource="com/androidlongs/book/common/model/friend/FroumModel.hbm.xml"/>
 
 	</session-factory>
 

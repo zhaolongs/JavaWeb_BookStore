@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 	<class name="com.androidlongs.book.common.model.book.BookModel"
-		dynamic-insert="true" dynamic-update="false" table="t_person_2">
+		dynamic-insert="true" dynamic-update="false" table="t_book">
 		<!-- 主键 -->
 		<id name="bid">
 			<generator class="native"></generator>
@@ -13,14 +13,15 @@
 		<property name="bname">
 		</property>
 		<property name="bauthor"></property>
+		<property name="uuid" length="51" type="string"></property>
 		<property name="bdesc"></property>
-		<set name="bUserSet" table="t_re_book_and_user">
+		<set name="bUserSet" table="t_re_book_and_user" inverse="true" lazy="false">
 			<key column="book_id"></key>
 			<many-to-many class="com.androidlongs.book.common.model.book.BookModel"
 				column="bid"></many-to-many>
 		</set>
 		
-		<set name="bBookClassSet" table="t_re_bclass_and_book">
+		<set name="bBookClassSet" table="t_re_bclass_and_book" inverse="true" lazy="false">
 		    <key column="book_id"></key>
 		    <many-to-many class="com.androidlongs.book.common.model.selfs.BookClassModel"
 				column="bcid"></many-to-many>

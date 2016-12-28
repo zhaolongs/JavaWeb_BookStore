@@ -1,14 +1,17 @@
 package com.androidlongs.book.common.model.book;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.androidlongs.book.base.BaseModel;
 import com.androidlongs.book.common.model.selfs.BookClassModel;
 import com.androidlongs.book.common.model.user.UserModel;
 
-public class BookModel {
+public class BookModel extends BaseModel implements Serializable{
 
 	private Integer bid;
+	private String uuid;
 	private String bname;
 	private String bauthor;
 	private String bdesc;
@@ -24,7 +27,16 @@ public class BookModel {
 	}
 	
 	
+	
+	
+	
 
+	public String getUuid() {
+		return uuid;
+	}
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
+	}
 	public Set<BookClassModel> getbBookClassSet() {
 		return bBookClassSet;
 	}
