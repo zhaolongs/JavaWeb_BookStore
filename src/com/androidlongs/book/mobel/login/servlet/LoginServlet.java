@@ -25,6 +25,8 @@ public class LoginServlet extends HomeServlet {
 
 		try {
 
+			String method = request.getMethod();
+			System.out.println("访问 "+method);
 			String userName = request.getParameter("userName");
 			String password = request.getParameter("password");
 

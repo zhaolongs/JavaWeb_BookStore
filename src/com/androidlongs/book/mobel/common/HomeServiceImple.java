@@ -1,6 +1,7 @@
 package com.androidlongs.book.mobel.common;
 
 import java.util.List;
+import java.util.UUID;
 
 import com.androidlongs.book.common.model.book.BookModel;
 import com.androidlongs.book.common.model.selfs.BookClassModel;
@@ -18,6 +19,7 @@ public class HomeServiceImple  implements HomeService{
 
 	@Override
 	public UserModel regist(UserModel userModel) {
+		userModel.setUserUUID(UUID.randomUUID().toString());
 		return (UserModel) mUserDao.addModel(userModel);
 	}
 
