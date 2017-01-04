@@ -9,9 +9,15 @@
 			<generator class="native"></generator>
 		</id>
 		
-		<property name="bcname" ></property>
-		<property name="bcdesc" ></property>
-		<set name="bBookSet" table="t_re_bclass_and_book">
+		
+		<property name="bcuuid" length="51" type="string" ></property>
+		<property name="bcaddTime" length="51" type="string" ></property>
+		<property name="bclastUpdateTime" length="51" type="string" ></property>
+		
+		
+		<property name="bcname" length="51" type="string" ></property>
+		<property name="bcdesc" length="351" type="string"></property>
+		<set name="bBookSet" table="t_re_bclass_and_book" inverse="true" lazy="false">
 		    <key column="book_class_id"></key>
 		    <many-to-many class="com.androidlongs.book.common.model.book.BookModel"
 				column="bid"></many-to-many>
