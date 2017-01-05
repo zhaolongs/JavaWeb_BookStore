@@ -12,9 +12,34 @@ public class BookModel extends BaseModel implements Serializable{
 
 	private Integer bid;
 	private String uuid;
+	//书名
 	private String bname;
+	//作者
 	private String bauthor;
+	//书籍地址
+	private String bpath;
+	//书籍描述 
 	private String bdesc;
+	
+	//书籍图片名称
+	private String bpname;
+	//书籍图片地址
+	private String bppath;
+	
+	
+	
+	public String getBpname() {
+		return bpname;
+	}
+	public void setBpname(String bpname) {
+		this.bpname = bpname;
+	}
+	public String getBppath() {
+		return bppath;
+	}
+	public void setBppath(String bppath) {
+		this.bppath = bppath;
+	}
 	private Set<UserModel> bUserSet = new HashSet<>();
 
 	private Set<BookClassModel> bBookClassSet = new HashSet<>();
@@ -30,7 +55,15 @@ public class BookModel extends BaseModel implements Serializable{
 	
 	
 	
+	
+	
 
+	public String getBpath() {
+		return bpath;
+	}
+	public void setBpath(String bpath) {
+		this.bpath = bpath;
+	}
 	public String getUuid() {
 		return uuid;
 	}

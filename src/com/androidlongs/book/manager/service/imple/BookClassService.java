@@ -44,8 +44,8 @@ public class BookClassService implements BookClassServiceInterface{
 
 	@Override
 	public List<BaseModel> queryAllBookClass() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return mBookClassDao.queryAllBookClassModelList();
 	}
 
 	@Override
@@ -57,13 +57,14 @@ public class BookClassService implements BookClassServiceInterface{
 	@Override
 	public void deleteBookClassFromName(String name) {
 		// TODO Auto-generated method stub
-		
+		BaseModel queryModel = mBookClassDao.queryBookClassModelFromName(name);
+		mBookClassDao.deleteMocel(queryModel);
 	}
 
 	@Override
 	public void deleteBookClassFromId(String id) {
-		// TODO Auto-generated method stub
-		
+		BaseModel queryModel = mBookClassDao.queryModel(id);
+		mBookClassDao.deleteMocel(queryModel);
 	}
 
 }

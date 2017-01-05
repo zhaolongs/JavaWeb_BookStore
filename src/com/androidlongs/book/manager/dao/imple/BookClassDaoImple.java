@@ -2,6 +2,7 @@ package com.androidlongs.book.manager.dao.imple;
 
 import java.util.List;
 
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
@@ -81,6 +82,17 @@ public class BookClassDaoImple  implements BookClassDao{
 		beginTransaction.commit();
 		session.close();
 		return bookClassModel;
+	}
+
+	@Override
+	public List<BaseModel> queryAllBookClassModelList() {
+		Session session = HBUtils.openSession();
+		Transaction beginTransaction = session.beginTransaction();
+		Criteria createCriteria = session.createCriteria(BookClassModel.class);
+		List<BaseModel> list = createCriteria.list();
+		beginTransaction.commit();
+		session.close();
+		return list;
 	}
 
 }

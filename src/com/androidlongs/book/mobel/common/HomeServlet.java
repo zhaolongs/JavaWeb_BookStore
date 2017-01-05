@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.androidlongs.book.manager.service.BookClassServiceInterface;
 import com.androidlongs.book.manager.service.imple.BookClassService;
+import com.androidlongs.book.mobel.book.service.BookService;
+import com.androidlongs.book.mobel.book.service.BookServicenterface;
 
 
 /**
@@ -17,6 +19,7 @@ import com.androidlongs.book.manager.service.imple.BookClassService;
 public abstract class HomeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public HomeService  mHomeService = new HomeServiceImple();
+	public BookServicenterface mBookServicenterface = new BookService();
 	public BookClassServiceInterface mBookClassServiceInterface = new BookClassService();
        
     /**

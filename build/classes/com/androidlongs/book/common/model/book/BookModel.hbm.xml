@@ -10,9 +10,13 @@
 			<generator class="native"></generator>
 		</id>
 
-		<property name="bname">
+		<property name="bname" length="51" type="string">
 		</property>
-		<property name="bauthor"></property>
+		<property name="bpname" length="111" type="string"></property>
+		<property name="bppath" length="251" type="string"></property>
+		
+		<property name="bauthor" length="51" type="string"></property>
+		<property name="bpath" length="251" type="string"></property>
 		<property name="uuid" length="51" type="string"></property>
 		<property name="bdesc"></property>
 		<set name="bUserSet" table="t_re_book_and_user" inverse="true" lazy="false">

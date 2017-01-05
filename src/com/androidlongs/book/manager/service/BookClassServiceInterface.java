@@ -3,6 +3,7 @@ package com.androidlongs.book.manager.service;
 import java.util.List;
 
 import com.androidlongs.book.base.BaseModel;
+import com.androidlongs.book.common.model.book.BookModel;
 import com.androidlongs.book.common.model.selfs.BookClassModel;
 
 public interface BookClassServiceInterface {
@@ -20,4 +21,5 @@ public interface BookClassServiceInterface {
 	//删除书籍分类 
 	void deleteBookClassFromName(String name);
 	void deleteBookClassFromId(String id);
+	
 }
