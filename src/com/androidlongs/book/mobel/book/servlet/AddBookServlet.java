@@ -19,7 +19,9 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.FilenameUtils;
 
+import com.androidlongs.book.base.BaseModel;
 import com.androidlongs.book.common.model.book.BookModel;
+import com.androidlongs.book.common.model.selfs.BookClassModel;
 import com.androidlongs.book.mobel.common.HomeServlet;
 
 @WebServlet("/manager/addbook")
@@ -66,10 +68,14 @@ public class AddBookServlet extends HomeServlet{
 					e.printStackTrace();
 				}
 				//单独处理categoryId
-				if("select_book_class".equals(fieldName)){
+				if("add_book_bookclass_select".equals(fieldName)){
+					System.out.println("add_book_bookclass_select is " + fieldValue);
 					if (fieldName.equals("无")) {
 					}else {
-
+					BookClassModel queryBookClass = (BookClassModel) mBookClassServiceInterface.queryBookClassFromName(fieldValue);
+					queryBookClass.addBookModel(book);
+					mBookClassServiceInterface.addBookClass(queryBookClass);
+					book.addBookClassModel(queryBookClass);
 					}
 
 				}
@@ -83,7 +89,7 @@ public class AddBookServlet extends HomeServlet{
 					//创建唯一文件名称
 					filename = UUID.randomUUID()+"."+extensionName;
 					//路径
-		
+
 					String rootDirectory = getServletContext().getRealPath("/images");;
 
 					String childPath =getStoreDirecotry(rootDirectory);
@@ -93,20 +99,20 @@ public class AddBookServlet extends HomeServlet{
 						//图片名称
 						book.setBpname(filename);
 						book.setBppath(rootDirectory+File.separator+childPath+File.separator+filename);
-						
+
 						System.out.println("上传图片 "+rootDirectory+File.separator+childPath+File.separator+filename);
 
 					}else if (file_file_nameString.equals("book_file")) {
 						//thml 资源路径
 
-						 rootDirectory = getServletContext().getRealPath("/html");;
-						 childPath =getStoreDirecotry(rootDirectory);
-						 
-						 book.setBpath(rootDirectory+File.separator+childPath+File.separator+filename);
-						 System.out.println("上传文件  "+rootDirectory+File.separator+childPath+File.separator+filename);
-						
+						rootDirectory = getServletContext().getRealPath("/html");;
+						childPath =getStoreDirecotry(rootDirectory);
+
+						book.setBpath(rootDirectory+File.separator+childPath+File.separator+filename);
+						System.out.println("上传文件  "+rootDirectory+File.separator+childPath+File.separator+filename);
+
 					}
-					
+
 					//文件上传
 					try {
 						item.write(new File(rootDirectory+File.separator+childPath+File.separator+filename));

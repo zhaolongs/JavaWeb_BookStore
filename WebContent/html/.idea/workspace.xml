@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed124dd0-7b5a-417a-b1ed-26dac9295aba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/book/book/main/manager/css/add_book_form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/com/androidlongs/book/manager/dao/BookClassDao.java" afterPath="$PROJECT_DIR$/../../src/com/androidlongs/book/manager/dao/BookClassDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/com/androidlongs/book/manager/dao/imple/BookClassDaoImple.java" afterPath="$PROJECT_DIR$/../../src/com/androidlongs/book/manager/dao/imple/BookClassDaoImple.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/com/androidlongs/book/manager/service/imple/BookClassService.java" afterPath="$PROJECT_DIR$/../../src/com/androidlongs/book/manager/service/imple/BookClassService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/book/main/manager/js/book_class_list.js" afterPath="$PROJECT_DIR$/book/book/main/manager/js/book_class_list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/book/main/manager/css/book_class_table.css" afterPath="$PROJECT_DIR$/book/book/main/manager/css/book_class_table.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/book/main/manager/css/add_book_form.css" afterPath="$PROJECT_DIR$/book/book/main/manager/css/add_book_form.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/book/main/manager/js/book_list.js" afterPath="$PROJECT_DIR$/book/book/main/manager/js/book_list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/book/main/manager/js/httpHelper.js" afterPath="$PROJECT_DIR$/book/book/main/manager/js/httpHelper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/book/main/manager/css/index.css" afterPath="$PROJECT_DIR$/book/book/main/manager/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/book/main/manager/html/index.html" afterPath="$PROJECT_DIR$/book/book/main/manager/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/book/main/manager/js/index.js" afterPath="$PROJECT_DIR$/book/book/main/manager/js/index.js" />
     </list>
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,26 +26,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/book/book/main/manager/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.692307">
-              <caret line="53" column="34" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.5725646">
+              <caret line="120" column="64" selection-start-line="120" selection-start-column="64" selection-end-line="120" selection-end-column="64" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book_class_list.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="book_class_list.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/book/book/main/manager/js/book_class_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.34717">
-              <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="115" column="72" selection-start-line="111" selection-start-column="7" selection-end-line="115" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -67,11 +61,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="book_list_table.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/book/book/main/manager/css/book_list_table.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="add_book_form.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/book/book/main/manager/css/add_book_form.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+              <caret line="43" column="26" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -81,10 +85,12 @@
         <entry file="file://$PROJECT_DIR$/book/book/main/manager/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="26" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="26" />
+              <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
               <folding>
-                <element signature="e#1294#1673#0" expanded="false" />
-                <element signature="e#1741#2064#0" expanded="false" />
+                <element signature="e#90#380#0" expanded="false" />
+                <element signature="e#452#851#0" expanded="false" />
+                <element signature="e#1340#1719#0" expanded="false" />
+                <element signature="e#1787#2110#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -94,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/book/book/main/manager/js/book_list.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+              <caret line="91" column="63" selection-start-line="91" selection-start-column="63" selection-end-line="91" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -135,15 +141,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/book/book/main/manager/js/index.js" />
         <option value="$PROJECT_DIR$/book/book/main/manager/css/book_list_table.css" />
         <option value="$PROJECT_DIR$/book/book/main/manager/css/index.css" />
-        <option value="$PROJECT_DIR$/book/book/main/manager/css/add_book_form.css" />
-        <option value="$PROJECT_DIR$/book/book/main/manager/html/index.html" />
         <option value="$PROJECT_DIR$/book/book/main/manager/css/book_class_table.css" />
         <option value="$PROJECT_DIR$/book/book/main/manager/js/httpHelper.js" />
-        <option value="$PROJECT_DIR$/book/book/main/manager/js/book_list.js" />
         <option value="$PROJECT_DIR$/book/book/main/manager/js/book_class_list.js" />
+        <option value="$PROJECT_DIR$/book/book/main/manager/js/index.js" />
+        <option value="$PROJECT_DIR$/book/book/main/manager/css/add_book_form.css" />
+        <option value="$PROJECT_DIR$/book/book/main/manager/js/book_list.js" />
+        <option value="$PROJECT_DIR$/book/book/main/manager/html/index.html" />
       </list>
     </option>
   </component>
@@ -340,6 +346,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -387,6 +394,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ed124dd0-7b5a-417a-b1ed-26dac9295aba" name="Default" comment="" />
@@ -397,8 +407,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="85" y="48" width="1184" height="650" extended-state="1" />
-    <editor active="true" />
+    <frame x="85" y="48" width="1184" height="650" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -419,11 +429,27 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/book/book/main/manager/html/index.html</url>
+          <line>129</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -433,9 +459,9 @@
           <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -471,8 +497,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding>
-            <element signature="e#1294#1673#0" expanded="false" />
-            <element signature="e#1741#2064#0" expanded="false" />
+            <element signature="e#1340#1719#0" expanded="false" />
+            <element signature="e#1787#2110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -523,9 +549,9 @@
           <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -561,8 +587,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding>
-            <element signature="e#1294#1673#0" expanded="false" />
-            <element signature="e#1741#2064#0" expanded="false" />
+            <element signature="e#1340#1719#0" expanded="false" />
+            <element signature="e#1787#2110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -613,9 +639,9 @@
           <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -643,8 +669,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
           <folding>
-            <element signature="e#1294#1673#0" expanded="false" />
-            <element signature="e#1741#2064#0" expanded="false" />
+            <element signature="e#1340#1719#0" expanded="false" />
+            <element signature="e#1787#2110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -687,9 +713,9 @@
           <caret line="48" column="48" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="48" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -709,8 +735,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
           <folding>
-            <element signature="e#1294#1673#0" expanded="false" />
-            <element signature="e#1741#2064#0" expanded="false" />
+            <element signature="e#1340#1719#0" expanded="false" />
+            <element signature="e#1787#2110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -745,9 +771,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -768,62 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/book/book/main/manager/css/book_list_table.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book/book/main/manager/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="26" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="26" />
-          <folding>
-            <element signature="e#1294#1673#0" expanded="false" />
-            <element signature="e#1741#2064#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book/book/main/manager/css/add_book_form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book/book/main/manager/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.692307">
-          <caret line="53" column="34" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="34" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book/book/main/manager/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book/book/main/manager/js/book_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/book/book/main/manager/js/httpHelper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -840,11 +810,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/book/book/main/manager/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding>
+            <element signature="e#90#380#0" expanded="false" />
+            <element signature="e#452#851#0" expanded="false" />
+            <element signature="e#1340#1719#0" expanded="false" />
+            <element signature="e#1787#2110#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book/book/main/manager/css/book_list_table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book/book/main/manager/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book/book/main/manager/css/add_book_form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/book/book/main/manager/js/book_class_list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.34717">
-          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="72" selection-start-line="111" selection-start-column="7" selection-end-line="115" selection-end-column="72" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book/book/main/manager/js/book_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="63" selection-start-line="91" selection-start-column="63" selection-end-line="91" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book/book/main/manager/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5725646">
+          <caret line="120" column="64" selection-start-line="120" selection-start-column="64" selection-end-line="120" selection-end-column="64" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

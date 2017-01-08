@@ -1,9 +1,11 @@
 package com.androidlongs.book.mobel.common;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.androidlongs.book.base.BaseModel;
+import com.androidlongs.book.common.model.selfs.BookClassModel;
 
 public class ResponseModel implements Serializable{
 
@@ -14,8 +16,8 @@ public class ResponseModel implements Serializable{
 	private String code;
 	private String message;
 	private BaseModel content;
-	private List<BaseModel> contentList;
-	
+	private List<BaseModel> contentList = new ArrayList<BaseModel>();
+
 	public String getCode() {
 		return code;
 	}
@@ -40,6 +42,24 @@ public class ResponseModel implements Serializable{
 	public void setContent(BaseModel content) {
 		this.content = content;
 	}
+	public void setBookContentList(List<BookClassModel> list) {
+		for (int i = 0; i < list.size(); i++) {
+			this.contentList.add(list.get(i));
+		}
+	}
+	public List<BaseModel> getBookContentList() {
+
+		return	this.contentList;
+
+	}
+	@Override
+	public String toString() {
+		return "ResponseModel [code=" + code + ", message=" + message
+				+ ", content=" + content + ", contentList=" + contentList + "]";
+	}
+
+
 	
-	
+
+
 }

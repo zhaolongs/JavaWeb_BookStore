@@ -14,6 +14,9 @@ public interface BookClassServiceInterface {
 	BaseModel queryBookClassFromName(String name);
 	BaseModel queryBookClassFromId(String uuid);
 	
+	//更新书籍分类
+	BaseModel updateBookClass(BookClassModel model);
+	
 	//查询所有的书籍分类 
 	List<BaseModel> queryAllBookClass();
 	//修改书籍分类

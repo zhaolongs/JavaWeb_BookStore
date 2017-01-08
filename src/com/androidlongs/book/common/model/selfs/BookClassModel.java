@@ -18,6 +18,7 @@ public class BookClassModel extends BaseModel implements Serializable{
 	
 	
 	
+
 	public String getBcuuid() {
 		return bcuuid;
 	}
@@ -38,7 +39,9 @@ public class BookClassModel extends BaseModel implements Serializable{
 	}
 	private Set<BookModel> bBookSet = new HashSet<>();
 	
-	
+	public void addBookModel(BookModel model){
+		bBookSet.add(model);
+	}
 
 	public Set<BookModel> getbBookSet() {
 		return bBookSet;

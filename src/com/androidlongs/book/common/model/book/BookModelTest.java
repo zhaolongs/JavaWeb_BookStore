@@ -3,6 +3,7 @@ package com.androidlongs.book.common.model.book;
 import static org.junit.Assert.*;
 
 import java.util.List;
+import java.util.UUID;
 
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -12,6 +13,9 @@ import org.hibernate.cfg.Configuration;
 import org.junit.Test;
 
 
+import com.androidlongs.book.common.model.selfs.BookClassModel;
+import com.androidlongs.book.manager.dao.BookClassDao;
+import com.androidlongs.book.manager.dao.imple.BookClassDaoImple;
 import com.androidlongs.book.utils.HBUtils;
 
 public class BookModelTest {
@@ -19,19 +23,21 @@ public class BookModelTest {
 	@Test
 	public void add() {
 		BookModel model = new BookModel();
-		model.setBname("xiso");
+		model.setUuid(UUID.randomUUID().toString());
+		model.setBname("xiso22"+UUID.randomUUID().toString());
 		model.setBauthor("赵子龙");
-		model.setBdesc("222");
+		model.setBdesc("222"+UUID.randomUUID().toString());
 
-		//1 加载配置文件 ,注意：调用方法
-		Configuration config = new Configuration().configure("com/androidlongs/book/config/hibernate.cfg.xml");
-		//2 获得SessionFactory，相当于连接池
-		SessionFactory factory = config.buildSessionFactory();
-		//3获得Session，相当于 jdbc 连接 Connection
-		Session session = factory.openSession();
+		Session session = HBUtils.openSession();
 		//4 开启事务
 		Transaction transaction = session.beginTransaction();
 
+		BookClassDao classDao = new BookClassDaoImple();
+		BookClassModel bookClassModel = classDao.queryBookClassModelFromName("it");
+		bookClassModel.addBookModel(model);
+		//session.saveOrUpdate(bookClassModel);
+		
+		model.addBookClassModel(bookClassModel);
 		//**** 操作
 		session.save(model);
 
@@ -40,7 +46,6 @@ public class BookModelTest {
 		//6 释放
 		session.close();
 		//7 关闭工厂
-		factory.close();
 	}
 	@Test
 	public void update(){

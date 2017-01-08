@@ -1,5 +1,6 @@
 package com.androidlongs.book.manager.dao.imple;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.Criteria;
@@ -86,13 +87,15 @@ public class BookClassDaoImple  implements BookClassDao{
 
 	@Override
 	public List<BaseModel> queryAllBookClassModelList() {
+		List<BaseModel> arrList = new ArrayList<BaseModel>();
 		Session session = HBUtils.openSession();
 		Transaction beginTransaction = session.beginTransaction();
 		Criteria createCriteria = session.createCriteria(BookClassModel.class);
 		List<BaseModel> list = createCriteria.list();
+		arrList.addAll(list);
 		beginTransaction.commit();
 		session.close();
-		return list;
+		return arrList;
 	}
 
 }

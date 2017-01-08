@@ -20,7 +20,7 @@
 		<set name="bBookSet" table="t_re_bclass_and_book" inverse="true" lazy="false">
 		    <key column="book_class_id"></key>
 		    <many-to-many class="com.androidlongs.book.common.model.book.BookModel"
-				column="bid"></many-to-many>
+				column="book_id" ></many-to-many>
 		</set>
 	</class>
 

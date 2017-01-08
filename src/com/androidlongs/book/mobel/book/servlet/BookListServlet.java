@@ -7,7 +7,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 import net.sf.json.JSONSerializer;
+import net.sf.json.JsonConfig;
 
 import com.androidlongs.book.common.model.book.BookModel;
 import com.androidlongs.book.mobel.common.HomeServiceImple;
@@ -25,13 +28,18 @@ public class BookListServlet extends HomeServlet{
 		try {
 			List<BookModel> bookList = mHomeService.getBookList();
 
-			String result = JSONSerializer.toJSON(bookList).toString();
-			response.getWriter().write(result);
+			JsonConfig config = new JsonConfig();
+			config.setExcludes(new String[]{"bBookSet"});//除去emps属性
+			String responseString = JSONArray.fromObject(bookList, config).toString();
+
+
+			//String result = JSONSerializer.toJSON(bookList).toString();
+			response.getWriter().write(responseString);
 		} catch (Exception e) {
 			System.out.println(" "+e.getMessage());
 		}
-		
-		
+
+
 	}
 
 }

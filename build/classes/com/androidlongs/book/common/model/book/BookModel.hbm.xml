@@ -28,7 +28,7 @@
 		<set name="bBookClassSet" table="t_re_bclass_and_book" inverse="true" lazy="false">
 		    <key column="book_id"></key>
 		    <many-to-many class="com.androidlongs.book.common.model.selfs.BookClassModel"
-				column="bcid"></many-to-many>
+				column="book_class_id"></many-to-many>
 		</set>
 	</class>
 
